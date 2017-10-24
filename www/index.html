@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+  <nav>
+  <a href="/logIn.html">LOGIN</a> |
+  <a href="/signUp.html">signUp</a> |
+  <a href="/universitario.html">UNIVERSITARIO</a> |
+  <a href="/responsable.html">RESPONSABLE</a>
+  <a href="/bibliotecario.html">BIBLIOTECARIO</a>
+</nav>
+<!--INICIA SIGN IN
+
+    <ion-view title="Sig-in" id="page6">
+  <ion-content padding="true" style="background: url('img/fondo.jpg') no-repeat center;background-size:cover;" class="has-header">
+    <div>
+      <img src="img/rebuc_logo.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <form id="sigIn-form2" class="list">
+      <ion-list id="sigIn-list2">
+        <label class="item item-input item-floating-label" id="sigIn-input8">
+          <input type="text" placeholder="Correo Ucol">
+        </label>
+        <label class="item item-input item-floating-label" id="sigIn-input6">
+          <input type="email" placeholder="Contraseña">
+        </label>
+      </ion-list>
+      <button id="sigIn-button6" style="color:#FFFFFF;border-radius:5px 5px 5px 5px;" class="button button-assertive button-block">Iniciar sesión</button>
+    </form>
+  </ion-content>
+</ion-view>
+ --> 
+
+<!--
+INICIA SIGN UP
+ <ion-view title="Signup" id="page5">
+  <ion-content padding="true" style="background: url(img/lzV4BLpORseAA21NiO2h_fondo.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <div>
+      <img src="img/zNMppBeaRgWCLfxKUZU3_LoginLogo.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <form id="signup-form1" class="list">
+      <ion-list id="signup-list1">
+        <label class="item item-input item-floating-label" id="signup-input1">
+          <input type="text" placeholder="Plantel / Dependencia">
+        </label>
+        <label class="item item-input item-floating-label" id="signup-input2">
+          <input type="email" placeholder="Contraseña">
+        </label>
+        <label class="item item-input item-floating-label" id="signup-input3">
+          <input type="text" placeholder="Confirmar contraseña">
+        </label>
+        <label class="item item-input item-floating-label" id="signup-input4">
+          <input type="text" placeholder="Correo Ucol">
+        </label>
+      </ion-list>
+      <button id="signup-button1" style="color:#FFFFFF;border-radius:5px 5px 5px 5px;" class="button button-assertive button-block">Registrarse</button>
+    </form>
+  </ion-content>
+</ion-view>
+-->
+ 
+<!--
+ INICIA UNIVERSITARIO
+ <ion-view title="Universitario" id="page8">
+  <ion-content padding="true" style="background: url(img/qlfc6VQIT76K9AMJwyVA_fondoBlur.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <h1 id="universitario-heading1" style="color:#FFFFFF;">Nombre:</h1>
+    <div style="margin-right:-20px;">
+      <button id="universitario-button7" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">Preguntar</button>
+    </div>
+    <div style="margin-right:-20px;">
+      <button id="universitario-button9" style="left:-10px;font-weight:600;" class="button button-balanced button-large button-full">Mis preguntas</button>
+    </div>
+  </ion-content>
+</ion-view>
+
+-->
+<!--
+ 
+ INICIA BILIOTECARIO 
+ <ion-view title="Bibliotecario" id="page9">
+  <ion-content padding="true" style="background: url(img/qlfc6VQIT76K9AMJwyVA_fondoBlur.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <h1 id="bibliotecario-heading2" style="color:#FFFFFF;">Nombre:</h1>
+    <div style="margin-right:-20px;">
+      <button id="bibliotecario-button16" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">TICKETS</button>
+    </div>
+  </ion-content>
+</ion-view>
+-->
+
+<!--INICIA RESPONSABLE
+ 
+ <ion-view title="Responsable" id="page10">
+  <ion-content padding="true" style="background: url('img/fondoBlur.jpg') no-repeat center;background-size:cover;" class="has-header">
+    <h1 id="responsable-heading3" style="color:#FFFFFF;">Nombre:</h1>
+    <div style="margin-right:-20px;">
+      <button id="responsable-button18" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">TICKETS</button>
+    </div>
+    <div style="margin-right:-20px;">
+      <button id="responsable-button19" style="left:-10px;font-weight:600;" class="button button-balanced button-large button-full">ASIGNAR ROL</button>
+    </div>
+  </ion-content>
+</ion-view>
+-->
+
+ 
+  </body>
+</html>
