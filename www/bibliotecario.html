@@ -34,14 +34,18 @@
   </head>
   <body ng-app="starter">
 
-	 <ion-view title="Bibliotecario" id="page9">
-	  <ion-content padding="true" style="background: url('img/fondoBlur.jpg') no-repeat center;background-size:cover;" class="has-header">
-		<h1 id="bibliotecario-heading2" style="color:#FFFFFF;">Nombre:</h1>
-		<div style="margin-right:-20px;">
-		  <button id="bibliotecario-button16" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">TICKETS</button>
-		</div>
-	  </ion-content>
-	</ion-view>
+
+<ion-view title="Bibliotecario" id="page9">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon ion-android-contact"> Cerrar sesión</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" style="background: url('img/fondoBlur.jpg') no-repeat center;background-size:cover;" class="has-header">
+    <h1 id="bibliotecario-heading2" style="color:#FFFFFF;">Nombre:</h1>
+    <div style="margin-right:-20px;">
+      <a ui-sref="tickets()" id="bibliotecario-button16" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">TICKETS</a>
+    </div>
+  </ion-content>
+</ion-view>
 
 
  

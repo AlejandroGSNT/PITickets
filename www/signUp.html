@@ -34,29 +34,35 @@
   </head>
   <body ng-app="starter">
 
- <ion-view title="Signup" id="page5">
+ 
+ <ion-view title="Registrarse" id="page5">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button icon ion-backspace-outline"> Iniciar sesión</button>
+  </ion-nav-buttons>
   <ion-content padding="true" style="background: url('img/fondo.jpg') no-repeat center;background-size:cover;" class="has-header">
     <div>
       <img src="img/rebuc_logo.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
-    <form id="signup-form1" class="list">
-      <ion-list id="signup-list1">
-        <label class="item item-input item-floating-label" id="signup-input1">
+    <form id="registrarse-form1" class="list">
+      <ion-list id="registrarse-list1">
+        <label class="item item-input item-floating-label" id="registrarse-input1">
           <input type="text" placeholder="Plantel / Dependencia">
         </label>
-        <label class="item item-input item-floating-label" id="signup-input2">
+        <label class="item item-input item-floating-label" id="registrarse-input2">
           <input type="email" placeholder="Contraseña">
         </label>
-        <label class="item item-input item-floating-label" id="signup-input3">
+        <label class="item item-input item-floating-label" id="registrarse-input3">
           <input type="text" placeholder="Confirmar contraseña">
         </label>
-        <label class="item item-input item-floating-label" id="signup-input4">
+        <label class="item item-input item-floating-label" id="registrarse-input4">
           <input type="text" placeholder="Correo Ucol">
         </label>
       </ion-list>
-      <button id="signup-button1" style="color:#FFFFFF;border-radius:5px 5px 5px 5px;" class="button button-assertive button-block">Registrarse</button>
+      <a ui-sref="iniciarSesiN()" id="registrarse-button1" style="color:#FFFFFF;border-radius:5px 5px 5px 5px;" class="button button-assertive button-block">Registrarse</a>
     </form>
   </ion-content>
 </ion-view>
+ 
+ 
   </body>
 </html>

@@ -33,25 +33,32 @@
     <script src="js/app.js"></script>
   </head>
   <body ng-app="starter">
-
-    <ion-view title="Sig-in" id="page6">
-  <ion-content padding="true" style="background: url('img/fondo.jpg') no-repeat center;background-size:cover;" class="has-header">
-    <div>
-      <img src="img/rebuc_logo.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <form id="sigIn-form2" class="list">
-      <ion-list id="sigIn-list2">
-        <label class="item item-input item-floating-label" id="sigIn-input8">
-          <input type="text" placeholder="Correo Ucol">
-        </label>
-        <label class="item item-input item-floating-label" id="sigIn-input6">
-          <input type="email" placeholder="Contraseña">
-        </label>
-      </ion-list>
-      <button id="sigIn-button6" style="color:#FFFFFF;border-radius:5px 5px 5px 5px;" class="button button-assertive button-block">Iniciar sesión</button>
+  
+  
+  
+<ion-view title="Tickets" id="page14">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-assertive icon ion-android-arrow-back"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <form id="tickets-form5" class="list">
+      <label class="item item-input" id="tickets-search3" name="findTicket">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Buscar ticket">
+      </label>
     </form>
+    <ion-list id="tickets-list10">
+      <ion-item class="item-icon-left" id="tickets-list-item12">
+        <i class="icon ion-android-checkmark-circle"></i>Tienen Moby dick?</ion-item>
+      <ion-item class="item-icon-left" id="tickets-list-item11">
+        <i class="icon ion-android-alarm-clock"></i>Cómo pedir un libro</ion-item>
+      <ion-item class="item-icon-left" id="tickets-list-item13">
+        <i class="icon ion-android-cancel"></i>Dónde puedo pedir libros?</ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
+
+
 
 
  

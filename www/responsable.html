@@ -35,13 +35,16 @@
   <body ng-app="starter">
 
  <ion-view title="Responsable" id="page10">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon ion-android-contact"> Cerrar sesión</button>
+  </ion-nav-buttons>
   <ion-content padding="true" style="background: url('img/fondoBlur.jpg') no-repeat center;background-size:cover;" class="has-header">
     <h1 id="responsable-heading3" style="color:#FFFFFF;">Nombre:</h1>
     <div style="margin-right:-20px;">
-      <button id="responsable-button18" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">TICKETS</button>
+      <a ui-sref="tickets()" id="responsable-button18" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">TICKETS</a>
     </div>
     <div style="margin-right:-20px;">
-      <button id="responsable-button19" style="left:-10px;font-weight:600;" class="button button-balanced button-large button-full">ASIGNAR ROL</button>
+      <a ui-sref="asignarRol()" id="responsable-button19" style="left:-10px;font-weight:600;" class="button button-balanced button-large button-full">ASIGNAR ROL</a>
     </div>
   </ion-content>
 </ion-view>

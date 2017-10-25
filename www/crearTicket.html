@@ -33,23 +33,29 @@
     <script src="js/app.js"></script>
   </head>
   <body ng-app="starter">
+  
+  
+  
 
 
-	  
-	  <ion-view title="Universitario" id="universitario">
-  <ion-nav-buttons side="right" class="has-header">
-    <button class="button icon ion-android-contact"> Cerrar sesión</button>
+<ion-view title="crear ticket" id="page11">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-assertive icon ion-android-arrow-back"></button>
   </ion-nav-buttons>
-  <ion-content padding="true" style="background: url(img/qlfc6VQIT76K9AMJwyVA_fondoBlur.jpg) no-repeat center;background-size:cover;" class="has-header">
-    <h1 id="universitario-heading1" style="color:#FFFFFF;">Nombre:</h1>
-    <div style="margin-right:-20px;">
-      <a ui-sref="crearTicket()" id="universitario-button7" style="left:-10px;font-weight:600;" class="button button-energized button-large button-full">Preguntar</a>
-    </div>
-    <div style="margin-right:-20px;">
-      <a ui-sref="tickets()" id="universitario-button9" style="left:-10px;font-weight:600;" class="button button-balanced button-large button-full">Mis preguntas</a>
-    </div>
+  <ion-content padding="true" class="has-header">
+    <form id="crearTicket-form3" class="list">
+      <label class="item item-input" id="crearTicket-input9" name="title">
+        <span class="input-label">Tíitulo:</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input" id="crearTicket-textarea1" name="text">
+        <span class="input-label">Asunto:</span><textarea placeholder=""></textarea></label>
+    </form>
+    <a ui-sref="universitario()" id="crearTicket-button14" class="button button-calm button-block">Enviar</a>
   </ion-content>
 </ion-view>
+
+
 
  
   </body>
