@@ -31,15 +31,22 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+        <script>
+function goBack() {
+    window.history.back();
+}
+</script>
   </head>
   <body ng-app="starter">
   
   
   
 <ion-view title="Tickets" id="page14">
+<ion-nav-bar>
   <ion-nav-buttons side="left" class="has-header">
-    <button class="button button-assertive icon ion-android-arrow-back"></button>
+    <button onclick="goBack()" class="button button-assertive icon ion-android-arrow-back"></button>
   </ion-nav-buttons>
+</ion-nav-bar>
   <ion-content padding="true" class="has-header">
     <form id="tickets-form5" class="list">
       <label class="item item-input" id="tickets-search3" name="findTicket">

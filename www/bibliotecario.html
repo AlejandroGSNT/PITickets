@@ -31,14 +31,21 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+        <script>
+function goBack() {
+    window.history.back();
+}
+</script>
   </head>
   <body ng-app="starter">
 
 
 <ion-view title="Bibliotecario" id="page9">
+<ion-nav-bar>
   <ion-nav-buttons side="right" class="has-header">
     <button class="button icon ion-android-contact"> Cerrar sesión</button>
   </ion-nav-buttons>
+</ion-nav-bar>
   <ion-content padding="true" style="background: url('img/fondoBlur.jpg') no-repeat center;background-size:cover;" class="has-header">
     <h1 id="bibliotecario-heading2" style="color:#FFFFFF;">Nombre:</h1>
     <div style="margin-right:-20px;">

@@ -31,14 +31,21 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+        <script>
+function goBack() {
+    window.history.back();
+}
+</script>
   </head>
   <body ng-app="starter">
   
   
 <ion-view title="Ver ticket" id="page12">
+<ion-nav-bar>
   <ion-nav-buttons side="left" class="has-header">
-    <button class="button button-assertive icon ion-android-arrow-back"></button>
+    <button onclick="goBack()" class="button button-assertive icon ion-android-arrow-back"></button>
   </ion-nav-buttons>
+</ion-nav-bar>
   <ion-content padding="true" class="has-header">
     <div id="verTicket-markdown2" class="show-list-numbers-and-dots">
       <p style="color:#000000;">Folio No.
