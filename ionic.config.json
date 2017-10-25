@@ -1,11 +1,14 @@
 {
-  "name": "piViews1",
+  "name": "PI",
   "app_id": "",
   "type": "ionic1",
   "integrations": {
     "gulp": {}
   },
   "watchPatterns": [
-    "scss/**/*"
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
   ]
 }
